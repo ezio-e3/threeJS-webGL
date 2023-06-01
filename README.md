@@ -67,5 +67,6 @@ Tetxures are images that cover the geometries
 These textures usually follow PBR (Physical Based Renderring) principles, meaning it tries to imitate realistic results by getting close to real life calculations
 
 ### UV Unwrapping
-This is about how a texture is placed (wrapped) around a geometry
+This is about how a texture is placed (wrapped) around a geometry, this concept is similar to unrwapping origami
+
 

@@ -69,4 +69,7 @@ These textures usually follow PBR (Physical Based Renderring) principles, meanin
 ### UV Unwrapping
 This is about how a texture is placed (wrapped) around a geometry, this concept is similar to unrwapping origami
 
+## Materials
+Materials are used to put a color on each visible pixel of your geometery, materials are written in programs called shaders.
+
 

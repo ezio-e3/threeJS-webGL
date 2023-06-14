@@ -35,7 +35,7 @@ const fontLoader = new FontLoader()
 fontLoader.load('/fonts/helvetiker_bold.typeface.json', 
 (font) => {
     const textGeometry = new TextGeometry(
-        'Three.js Donut Shop', 
+        'Edinam Yao Ahadzie', 
         {
             font: font,
             size: 0.5,

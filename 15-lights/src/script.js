@@ -18,13 +18,43 @@ const scene = new THREE.Scene()
  * Lights
  */
 const ambientLight = new THREE.AmbientLight(0xffffff, 0.5)
-scene.add(ambientLight)
+//scene.add(ambientLight)
 
-const pointLight = new THREE.PointLight(0xffffff, 0.5)
-pointLight.position.x = 2
-pointLight.position.y = 3
-pointLight.position.z = 4
-scene.add(pointLight)
+const directionalLight = new THREE.DirectionalLight()
+directionalLight.color = new THREE.Color('white')
+directionalLight.intensity = 0.3
+//scene.add(directionalLight)
+
+const hemisphereLight = new THREE.HemisphereLight()
+hemisphereLight.groundColor = new THREE.Color('red')
+hemisphereLight.color = new THREE.Color('yellow')
+hemisphereLight.intensity = 0.35
+//scene.add(hemisphereLight)
+
+const pointLight = new THREE.PointLight('orange', 0.5)
+// pointLight.position.x = 2
+// pointLight.position.y = 3
+// pointLight.position.z = 4
+//scene.add(pointLight)
+
+const rectAreaLight = new THREE.RectAreaLight()
+rectAreaLight.color = new THREE.Color('violet')
+rectAreaLight.intensity = 1
+rectAreaLight.width = 3
+rectAreaLight.height = 1
+rectAreaLight.position.set(-1.5, 0, 1.5)
+rectAreaLight.lookAt(new THREE.Vector3())
+scene.add(rectAreaLight)
+
+const spotLight = new THREE.SpotLight()
+spotLight.color = new THREE.Color(0x78ff00)
+spotLight.intensity = 0.5
+spotLight.distance = 7
+spotLight.angle = Math.PI * 0.1
+spotLight.penumbra = 0.25
+spotLight.decay = 1
+spotLight.position.set(0, 2, 3)
+scene.add(spotLight)
 
 /**
  * Objects

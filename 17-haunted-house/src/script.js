@@ -90,7 +90,9 @@ for(let i = 0; i < 50; i++){
     const z = Math.cos(angle) * radius
 
     const grave = new THREE.Mesh(graveGeometry, graveMaterial)
-    grave.position.set(x, 0, z)
+    grave.position.set(x, 0.3, z)
+    grave.rotation.y = (Math.random() - 0.5) * 0.8
+    grave.rotation.z = (Math.random() - 0.5) * 0.3
     graves.add(grave) 
 }
 
